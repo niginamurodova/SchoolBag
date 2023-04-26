@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    padding: 30px 200px;
+    max-width: 1492px;
+    margin: auto;
+}
+input{
+    outline: none;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+}
+
+@media(max-width:1166px){
+    .container{
+        padding: 30px;
+    }
+}

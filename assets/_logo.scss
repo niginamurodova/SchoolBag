@@ -1,0 +1,12 @@
+.logo{
+    padding: 130px 0;
+    max-width: 1492px;
+    margin: auto;
+    .logo_main{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,62 @@
+.sell{
+    padding-top: 130px;
+    .sell_main{
+        .sell_header{
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 90px;
+            h2{
+                position: relative;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 150%;
+                text-transform: capitalize;
+                color: #2F2F2F;
+                opacity: 0.8;
+                &:hover::after{
+                    width: 100%;
+                }
+                &::after{
+                    position: absolute;
+                    content: ' ';
+                    width: 0;
+                    height: 5px;
+                    top: 170%;
+                    left: 0;
+                    background-color: #F59B00;
+                    transition: all 0.2s;
+                }
+                
+            }
+        }
+    }
+    
+}
+
+@media(max-width:1470px){
+    .sell{
+        .sell_main{
+            .sell_img{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 40px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media(max-width: 900px){
+    .sell{
+        .sell_main{
+            .sell_header{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 60px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

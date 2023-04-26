@@ -1,0 +1,83 @@
+header{
+    background-color: #2F2F2F;
+    
+    .header_main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        label, input{
+            display: none;
+        }
+        #check:checked ~ nav{
+            transform: translate(0);
+            
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            gap: 90px;
+            position: relative;
+            transition: all 0.2s;
+
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                li{
+                    a{
+                        color:#FFFFFF;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 160%;
+                        text-transform: capitalize;
+                        color: #FFFFFF;
+                        opacity: 0.6;
+                        transition: all 0.2s;
+                        &:hover{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            button{
+                width: 141px;
+                height: 49px;
+                background: #F59B00;
+                border-radius: 5px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 120%;
+                text-transform: capitalize;
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+@media(max-width:740px){
+    header{
+        .header_main{
+            label{
+                display: block;
+            }
+            .material-symbols-outlined{
+                color: #FFFFFF;
+            }
+            nav{
+                position: absolute;
+                top: 90px;
+                background-color: #2F2F2F;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                text-align: center;
+                height: calc(100ch - 90px);
+                transform: translate(-100%);
+                z-index: 100;
+                ul{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}
